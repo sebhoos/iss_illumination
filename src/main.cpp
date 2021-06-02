@@ -16,7 +16,7 @@ CRGB leds[NUM_LEDS];
 #define MAX_LED_BRIGHTNES 100
 
 // Define general parameters
-const int loops_until_next_poll = 3;  // number of loops that are passing until the current iss location is requested from the server (one loop is 10 sec)
+const int loops_until_next_poll = 5;  // number of loops that are passing until the current iss location is requested from the server (one loop is 3 sec)
 const int time_until_wifi_issue_is_illuminated = 5; // time [s] until the LEDs turn pink to signal a connection issue
 const double max_sight_dist_to_iss = 1000000; // distance at which the LEDs are illuminated with a running light (theoretical max dist to see ISS: 2294000 [m])
 
@@ -169,5 +169,5 @@ void loop() {
       loopcounter = 0;
   }
   illuminateISS(issInSight);
-  delay(10000);
+  delay(3000);
 }

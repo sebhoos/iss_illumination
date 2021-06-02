@@ -56,7 +56,7 @@ Inside the main.cpp some parameters can be set as described in the table below.
 | Parameter | Description |
 |--- |--- |
 | MAX_LED_BRIGHTNES | Max brightnes level of the LEDs [0,100]
-| loops_until_next_poll | number of loops that are passing until the current iss location is requested from the server (one loop is 10 sec) |
+| loops_until_next_poll | number of loops that are passing until the current iss location is requested from the server (one loop is 3 sec) |
 | time_until_wifi_issue_is_illuminated | time [s] until the LEDs turn pink to signal a connection issue |
 | max_sight_dist_to_iss | distance at which the LEDs are illuminated with a running light [m]|
 | ssid | SSID of the used Wifi |
