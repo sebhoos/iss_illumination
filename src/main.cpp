@@ -25,7 +25,7 @@ const char *ssid = "ssid";  // SSID of the Wifi
 const char *password = "pw";  // Password of the Wifi
 
 // Own Position GPS position (positive numbers mean N/E negative S/W)
-const double own_longitude = 6.0; 
+const double own_longitude = 6.0;
 const double own_latitude = 51.0;
 
 // other member variables
@@ -110,6 +110,7 @@ bool issIsInSight() {
   // reconnect Wifi if connection is lost
   if(WiFi.status() != WL_CONNECTED) {
     Serial.println("Disconnected from Wifi - Reconnecting now!");
+    connectToWifi();
   }
   HTTPClient http;
   //GET ISS position
